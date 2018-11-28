@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <main>
+        <header class="mid">
+           <button id="back-button" title="Back" >
+                <img data-src="caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" />
+            </button>
+            <button id="search-button" alt="Search" title="Search">
+               <img class="iconic iconic-md" data-src="magnifying-glass.svg" />
+            </button>
+            <input type="text" id="search-input" placeholder="See Your Movie Here!!!!" />
+        </header>
+        <div class="page" id="search-results">
+            <section class="title"></section>
+            <section class="content"></section>
+        </div>
+        <div class="page" id="recommend-results">
+            <section class="title"></section>
+            <section class="content"></section>
+        </div>
+    </main>
+    
+    <div class="loading not">
+        <img class="iconic" data-src="loop-circular.svg" title="loop circular"/>
+    </div>
+    
+    <div class="attribution">
+        <img src="powered-by-square-green.svg" alt="The Movie DB" />
+    </div>
+    
+    <script src="iconic.min.js"></script>
+    <script src="key.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
